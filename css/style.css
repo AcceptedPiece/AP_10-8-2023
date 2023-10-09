@@ -1,11 +1,89 @@
-body{
+/*
+1. universal
+Syntax 
+*
+{
+    property:value;
+}
+2. default/simple selector/tag selector
+tagname{
+    property:value;
+}
+*/
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+div{
     background: red;
+    width: 100%;
+    height: 100vh;
+}
+section{
+    background: yellow;
+    width: 50%;
+    height: 50vh;
 }
 h1{
-    color: blue;
-    font-size: 6rem;
+    color: brown;
+    text-shadow: 10px 10px 10px red;
+    font-size: 3rem;
 }
-p{
+span{
+    color: blueviolet;
+}
+/*
+Id selector 
+synatx
+div#id
+{
+    property:value;
+}
+
+*/
+section#select{
     color: aliceblue;
-    font-size: 32px;
+}
+div.main{
+    display: flex;
+
+}
+div.box{
+    width: 200px;
+    height: 200px;
+    background: gray;
+    color: red;
+    
+}
+/*
+Attribute 
+<input type="radio">
+input[type='radio']
+*/
+input{
+    width: 200px;
+    height: 40px;
+}
+input[type='radio']{
+    width: auto;
+    height: auto;
+}
+/*
+    Group selector/Multiple
+    table,tr,td,th{
+        property:value;
+    }
+*/
+table,tr,td{
+    border: 2px solid blue;
+    padding: 10px;
+    border-collapse: collapse;
+}
+/*
+pseudo class 
+*/
+a:hover{
+    text-decoration: none;
+    color: brown;
 }
